@@ -110,7 +110,7 @@ export interface AssetSourceSpec {
 export type AssetFromSource = {
   kind: 'assetDocumentId' | 'file' | 'base64' | 'url'
   value: string | File
-  assetDocumentProps?: ImageAsset
+  assetDocumentProps?: Partial<ImageAsset>
 }
 
 export interface AssetSourceComponentProps {
